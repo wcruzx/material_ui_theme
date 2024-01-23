@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
 
-const theme = createTheme({
+const themeDefault = createTheme({
   palette: {
     primary: {
       main: "#734492",
@@ -11,8 +11,15 @@ const theme = createTheme({
         defaultProps:{
             underline: "none",
         },
+        styleOverrides: {
+          root: {
+            ":hover": {
+              textDecoration: "underline",
+            },
+          },
+        },
       },
   },
 });
 
-export default theme;
+export default themeDefault;
