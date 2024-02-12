@@ -1,5 +1,6 @@
 import { AppBar, Box, Drawer, Icon, IconButton, Link, Toolbar } from "@mui/material";
 import { useState } from "react";
+import ToggleThemeButton from "../ToggleTheme";
 
 export default function Header(){
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -37,6 +38,7 @@ export default function Header(){
         >
           <Icon>menu</Icon>
         </IconButton>
+        <ToggleThemeButton />
         <Drawer 
             open={openDrawer}
             onClick={() => setOpenDrawer(false)}

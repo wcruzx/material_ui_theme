@@ -1,7 +1,6 @@
-import { createContext, SetStateAction,Dispatch, useState, useEffect } from "react";
-import { Theme, ThemeProvider, createTheme } from "@mui/material";
+import { createContext, SetStateAction,Dispatch, useState  } from "react";
+import { Theme, createTheme, ThemeProvider } from "@mui/material";
 import themeLight from "../theme/theme-light" ;
-import themeDark from "../theme/theme-dark";
 
 interface ThemeDataContextInterface {
   ThemeState: Theme;
